@@ -33,7 +33,7 @@ header {
   width: 100%;
   padding: 0 0.25em;
   background-color: rgb(144, 102, 217);
-  color: aliceblue;
+  color: #ffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,16 +45,18 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
 }
+
 
 footer {
   width: 100%;
   padding: 0.25em;
   background-color: rgb(144, 102, 217);
-  color: aliceblue;
+  color: #fff;
   display: grid;
   place-content: center;
 }
@@ -82,8 +84,10 @@ ul li::before {
   background-color: rgb(199, 171, 226)
 }
 
-.item:first-child {
-  margin: 0;
+ul :focus,
+ul :hover {
+  background-color: rgb(225 214 249 / 50%);
+  outline: none;
 }
 
 .item input[type="checkbox"] {

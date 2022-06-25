@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Header() {
+function Header({title}) {
   return (
-	 <header className='header'><h1>To Do List</h1></header>
+	 <header>
+   <h1>{title}</h1>
+   </header>
   )
 }
 
